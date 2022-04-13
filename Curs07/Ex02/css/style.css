@@ -1,0 +1,13 @@
+i {
+  color: red;
+}
+
+.links a {
+  text-decoration: none;
+}
+/* adu ancorele care au dedesubt links */
+
+a[href*='.com'] {
+  color: black;
+}
+/* adu ancorele care au setul de caractere 'com' */

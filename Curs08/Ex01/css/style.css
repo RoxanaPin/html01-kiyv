@@ -1,0 +1,16 @@
+ol a {
+  color: green;
+  text-decoration: line-through solid blue;
+}
+/* toate ancorele descendente ale unuei ordered list */
+
+ul li {
+  text-decoration: underline;
+  color: purple;
+}
+
+p i {
+  color: blue;
+  font-weight: bold;
+  text-decoration: line-through;
+}
