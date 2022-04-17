@@ -130,3 +130,26 @@ ol a {
 }
 /* ancorele care se afla in liste ordonate */
 /* bold e scurtatura pt valoarea700 */
+
+ul {
+  font-family: 'Julius Sans One';
+  line-height: 25px;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-style: bold;
+  font-size: 28px;
+  color: green;
+}
+
+h2 {
+  font-family: 'Julius Sans One';
+  color: purple;
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+p {
+  line-height: 23px;
+}
