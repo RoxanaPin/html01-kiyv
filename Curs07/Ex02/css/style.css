@@ -33,7 +33,7 @@ b {
 .links a {
   text-decoration: none;
 }
-/* adu ancorele care au dedesubt links */
+/* adu ancorele de sub.links */
 
 a[href^="http://"]
 {
