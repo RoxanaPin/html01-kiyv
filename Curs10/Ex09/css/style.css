@@ -1,6 +1,16 @@
-/* add code here */
+#header h1 {
+  color: green;
+  text-decoration: underline;
+  padding: 5px;
+}
 
-/* add code here */
+#container p {
+  font-size: 25px;
+  font-style: italic;
+  color: purple;
+}
+/* #container p sau p.para*/
+/*sau .para.para fara spatiu*/
 
 h1 {
   color: red;
@@ -17,16 +27,4 @@ p {
 .para {
   text-decoration: none;
   color: blueviolet;
-}
-
-#header h1 {
-  color: green;
-  text-decoration: underline green;
-  padding: 5px;
-}
-
-#container p {
-  font-size: 25px;
-  font-style: italic;
-  color: purple;
 }
