@@ -18,16 +18,19 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
-  />
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
 
   <title>Monochrome</title>
 </head>
 
 <body>
-  <header class="header">
-
+  <header class="header container">
     <section class="header-top">
-
       <section class="header-connect">
         <ul>
           <li>
@@ -135,6 +138,24 @@
     </section>
     <!--  ./header-top -->
 
+    <header class="content-header">
+      <div class="banner-main">
+
+        <a
+          href="/"
+          title="Monochrome"
+          class="header-banner"
+        >
+          <img
+            src="./images/component (17).png"
+            alt="MONOCHROME - Banner"
+          >
+        </a>
+      </div>
+      <!-- ./banner-main -->
+    </header>
+    <!-- ./content-header -->
+
     <section class="header-bottom">
       <nav class="nav-primary">
         <ul>
@@ -187,28 +208,17 @@
   </header>
   <!-- ./header -->
 
-  <main class="content">
-    <header class="content-header">
-      <div class="banner-main">
+  <!-- greseala -->
+  <main class="content container">
 
-        <a
-          href="/"
-          title="Monochrome"
-          class="header-banner"
-        >
-          <img
-            src="./images/component (17).png"
-            alt="MONOCHROME - Banner"
-          >
-        </a>
-      </div>
-      <!-- ./banner-main -->
-    </header>
-    <!-- ./content-header -->
+
+
+
+
+
 
     <sec class="content-main">
       <!-- am scris section.content-main -->
-
       <section class="home-catalog-preview">
         <header>
           <h2>New Stuff</h2>
@@ -227,8 +237,6 @@
                     alt="MONOCHROME"
                   >
                 </a>
-
-
 
               </div>
               <!-- ./product-tile-image -->
@@ -270,8 +278,6 @@
                     alt="MONOCHROME"
                   >
                 </a>
-
-
 
               </div>
               <!-- ./product-tile-image -->
@@ -966,7 +972,6 @@
         </section>
         <!-- inchid al patrulea .home-catalog-preview -->
 
-
         <section class="home-social">
         </section>
 
@@ -980,32 +985,31 @@
   </main>
   <!-- ./content -->
 
-  <footer class="footer">
-    <section class="footer-contact">
-      <ul>
-        <li>
-          <a
-            href="tel:+44(0)1023456789"
-            title="call us"
-          >
-            call us <br>
-            +44 (0)10 2345 6789
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="mailto:x@x.com"
-            title="email customer care"
-          >email customer care</a>
-        </li>
-
-      </ul>
-    </section>
-    <!-- ./footer-contact -->
-
+  <footer class="footer container">
     <section class="footer-top">
       <nav class="footer-nav">
+        <section class="footer-contact">
+          <ul>
+            <li>
+              <a
+                href="tel:+44(0)1023456789"
+                title="call us"
+              >
+                call us <br>
+                +44 (0)10 2345 6789
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="mailto:x@x.com"
+                title="email customer care"
+              >email customer care</a>
+            </li>
+          </ul>
+        </section>
+        <!-- ./footer-contact -->
+
         <ul>
           <li>
             <a
@@ -1065,82 +1069,75 @@
             >advertising</a>
           </li>
         </ul>
-      </nav>
-      <!-- ./footer-nav -->
-    </section>
-    <!-- ./footer-top -->
 
-    <section class="footer-connect">
-
-      <form
-        action=""
-        class="footer-newsletter"
-      >
-        sign up for our newletter <br>
-
-        <input
-          type="email"
-          placeholder="email@email.com"
-          name="email"
-          required
-        >
-        <br>
-
-        <button type="submit">SUBMIT</button>
-      </form>
-      <!-- footer-newsletter -->
-
-      <section class="footer-social">
         <ul>
-          <li>
-            <a
-              href="https:youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Follow Thread Affair on YouTube"
-            >
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </li>
+          <section class="footer-connect">
+            <li>
+              <form
+                action=""
+                class="footer-newsletter"
+              >
+                sign up for our newsletter <br>
+            </li>
+            <li>
+              <input
+                type="email"
+                placeholder="email@email.com"
+                name="email"
+                required
+              >
+            </li>
+            <button type="submit">SUBMIT</button>
+            </form>
+            <!-- footer-newsletter -->
 
-          <li>
-            <a
-              href="https:twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Follow Thread Affair on Twitter"
-            >
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li>
+            <br><br>
+            <section class="footer-social">
+              <a
+                href="https:youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Follow Thread Affair on YouTube"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
 
-          <li>
-            <a
-              href="https:facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Follow Thread Affair on Facebook"
-            >
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-          </li>
+              <a
+                href="https:twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Follow Thread Affair on Twitter"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
 
-          <li>
-            <a
-              href="https:instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Follow Thread Affair on Instagram"
-            >
-              <i class="fa-brands fa-instagram-square"></i>
-            </a>
-          </li>
+              <a
+                href="https:facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Follow Thread Affair on Facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a
+                href="https:instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Follow Thread Affair on Instagram"
+              >
+                <i class="fa-brands fa-instagram-square"></i>
+              </a>
         </ul>
-      </section>
-      <!-- ./footer-social -->
+
+    </section>
+    <!-- ./footer-social -->
     </section>
     <!-- ./footer-connect -->
-
+    </nav>
+    <!-- ./footer-nav -->
+    </section>
+    <!-- ./footer-top -->
   </footer>
   <!-- ./footer -->
 </body>
