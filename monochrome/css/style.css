@@ -1,16 +1,6 @@
 @font-face {
-  font-family: 'Playfair Display';
-  src: url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf');
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
-  }
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url(../fonts/static/PlayfairDisplay-Black.ttf);
+  font-family: 'Playfair';
+  src: url(../fonts/PlayfairDisplay-Black.woff) format('woff');
 }
 
 @font-face {
@@ -253,8 +243,8 @@ table {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #707070;
+  font-family: 'Playfair', serif;
+  color: #2B2B2B;
   font-size: 16px;
 }
 /* declaratia de body din fonts am mutat-o sub codul de reset*/
@@ -264,16 +254,30 @@ a {
   color: inherit;
   text-decoration: none;
 }
-/* au mostenit si ancorele culoarea 707070 */
 
 .container {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   width: 100%;
   max-width: 1272px;
 }
 /*  max-width 1272 se imparte la 12 (pt ca masuram cu 12 coloane */
 
 /* header */
+
+
+.header-top-inner {
+  position: relative;
+  background: url('./../images/component\ \(17\).png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  height: inherit;
+  padding-left: 8px;
+}
+
+
 .header {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -281,10 +285,11 @@ a {
 
 .header-connect {
   float: left;
-}
+  }
 
 .header-connect li {
   display: inline-block;
+  margin: 10px;
 }
 
 .header-connect li:first-child i[class*='fa-'] {
@@ -296,7 +301,7 @@ a {
 .header-connect li:nth-child(2) {
   border-left: 1px solid #707070;
   padding-left: 16px;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .header-controls {
@@ -304,9 +309,11 @@ a {
 }
 
 .header-controls ul {
+
   display: flex;
   align-items: center;
   gap: 8px;
+  /* margin: 20px; */
 }
 
 .header-controls .user-controls a {
@@ -329,7 +336,7 @@ a {
   height: 21px;
   background-color: #2B2B2B;
   color: #fff;
-  font-weight: bold;
+  font-weight: 100;
   font-size: 14px;
   border-radius: 10px;
   display: inline-flex;
@@ -350,26 +357,53 @@ a {
 
 .header-bottom {
   text-align: center;
+  color: #E8E8E8;
+  background-color: #292929;
+  text-size-adjust: 19px;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  top: 488px;
+  left: 282px;
+  width: 136px;
+  height: 26px;
+  font: normal normal normal 19px/22px Playfair Display;
+  letter-spacing: 0.28px;
+  color: #E8E8E8;
+  text-transform: uppercase;
+  opacity: 1;
 }
 /* .nav-primary (text-align: center} */
 
 .nav-primary {
-  margin-bottom: 16px;
+  /* margin: 0 auto; */
+  /* width: 100%; */
+  /* max-width: 1272px; */
+margin-bottom: 16px;
+top: 473px;
+left: 0px;
+width: 1920px;
+height: 52px;
+background: #2B2B2B 0% 0% no-repeat padding-box;
+opacity: 1;
 }
 
 .nav-primary li {
   display: inline-block;
+  margin: 0 auto;
+text-align: center;
 }
 
 .nav-primary li a {
+  margin: 0 auto;
+  text-align: center;
   display: inherit;
   padding: 8px 18px;
   text-transform: uppercase;
-  margin: 0 4px;
+  /* margin: 0 4px; */
   font-size: 20px;
   font-weight: 300;
-  border-radius: 24px;
-  transition: color 0.2s linear, background-color 0.2s linear;
+  display: flex;
+  justify-content: space-between;
 }
 /* toata ancora sa poata fi apasata, nu doar li (adica textul din dreptunghi) */
 
@@ -378,6 +412,7 @@ a {
   color: #fff;
 }
 
+/* nav secondary nu am in monochrome
 .nav-secondary li {
   display: inline-block;
   margin: 0 4px;
@@ -393,30 +428,23 @@ a {
 
 .nav-secondary li a:hover {
   color: #2B2B2B;
-}
+}*/
 /* end-header*/
 
-
-.content-header {
-  background: #E8E8E8 url('./../images/component\ \(17\).png') center center;
-  background-size: cover;
-  top: -3px;
-  left: 0px;
-  width: 1920px;
-  height: 500px;
-  color: #FFFFFF;
-}
-
-
 /* footer */
-.footer-top {
-  background: #E8E8E8;
-  margin-bottom: 16px;
+.footer-inner {
+  background: #E8E8E8 0% 0% no-repeat padding-box;
   padding: 50px;
   color: #2B2B2B;
   font-size: 14px;
-  font-weight: 300;
-  text-transform: uppercase;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 auto; */
+  top: 3827px;
+  left: 0px;
+  width: 1920px;
+  height: 249px;
 }
 /* ./../ pentru a ajunge la img */
 
@@ -464,7 +492,7 @@ a {
 
 .footer-contact h1 {
   font-size: 16px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 8px;
 }
 
@@ -493,12 +521,68 @@ a {
 /* end-footer */
 
 /* homepage */
-.content-main section header {
+
+/* .content-header {
+  background: #E8E8E8  url('../images/component\ \(17\).png') center center / cover no-repeat;
+  height: 572px;
+  margin-bottom: 96px;
+}
+
+.banner-headings {
   text-align: center;
 }
-.content-main section header h1 {
+
+.banner-headings h1 {
+  font-weight: bold;
+  font-size: 75px;
+  }
+
+.banner-headings h2 {
+  font-weight: 300;
+  font-size: 42px;
+  margin: 0 auto;
+  margin: 16px 0 43px 0;
+}
+
+.banner-headings .banner-cta {
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #ff6b6b;
+  padding: 27px 40px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ff6b6b;
+  border-radius: 36px;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.banner-headings .banner-cta:hover {
+  color: #fff;
+  background-color: #ff6b6b;
+  }
+
+.banner-copy {
+  position: absolute;
+  left: 25px;
+  bottom: 40px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+*/
+
+.content-main > section {
+  margin-bottom: 96px;
+
+}
+
+.content-main > section > header {
+  text-align: center;
+}
+.content-main > section > header > h1 {
   font-size: 30px;
-  color: #2B2B2B;
+  color: #292929;
   font-weight: 300;
   margin-bottom: 16px;
 }
@@ -506,4 +590,192 @@ a {
 .content-main > section > header > h1 span {
   font-weight: 500;
 }
+
+.home-catalog-preview > header {
+  margin-bottom: 50px;
+}
+
+.product-tiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-tile {
+width: 27.34375%; /* cum am ajuns la numar 350/1280*100 */
+}
+
+.product-tile .product-tile-image {
+position: relative;
+}
+
+.product-tile .product-tile-image img {
+  width: 100%;
+}
+
+/* .product-tile .product-tile-badge {
+  color: #ff6b6b;
+  font-size: 20px;
+  font-weight: 500;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+} */
+
+
+
+.product-tile .product-tile-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.product-tile .product-tile-title span:first-child {
+  color: #000;
+  font-weight: 500;
+}
+
+.product-tile .product-tile-title span:nth-child(2) {
+  font-weight: 500;
+}
+
+.product-tile .product-tile-subtitle {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.product-tile .product-tile-pricing {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*.product-tile .product-tile-pricing .product-price-regular {
+  text-decoration: line-through;
+}
+
+.product-tile .product-tile-pricing .product-price {
+  font-size: 24px;
+}
+
+.product-tile .product-tile-pricing .product-price span {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.product-tile .product-tile-controls {
+  text-align: center;
+}
+
+.product-tile .product-tile-controls .product-tile-a2c {
+  border: 1px solid #ff6b6b;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 32px;
+  background: none;
+  color: #ff6b6b;
+  font-family: 'Roboto' sans-serif;
+  cursor: pointer;
+  transition: color 0.2s linear, background-color 0.2s linear;
+  }
+
+  .product-tile .product-tile-controls .product-tile-a2c:hover {
+    color: #fff;
+    background-color: #ff6b6b;
+  }
+  */
+
+
+.home-content {
+  font-family: 'Roboto', light;
+  color: #2B2B2B;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.33px;
+  /* display: inline-flex; */
+  display: inline-block;
+  justify-content: flex-start;
+  top: 1764px;
+  left: 1087px;
+  width: 551px;
+  height: 242px;
+}
+
+.home-content h2 {
+      font-family: 'Playfair', bold;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+    letter-spacing: 0.66px;
+    opacity: 1;
+    top: 1665px;
+    left: 1082px;
+    width: 556px;
+    height: 59px;
+}
+
+.home-cta a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 236px;
+  background: #0066B2 url('../images/component\ \(17\).png') center center / cover no-repeat;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.home-cta a span:nth-of-type(1) {
+  margin-bottom: 16px;
+}
+
+.home-cta a > span:nth-child(even) {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.home-cta a > span:nth-child(even) span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home-social ul {
+  margin-top: 33px;
+  text-align: center;
+  }
+
+.home-social li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* display: inline-flex; the safe choice daca nu stii sigur daca vrei in line sau block */
+
+.home-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5e5e5e;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+}
+
+.home-payment ul {
+  margin: 43px auto 0 auto;
+  width: 340px;
+  text-align: center;
+}
+
+.home-payment ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
 /* end homepage */

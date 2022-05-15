@@ -90,20 +90,20 @@
       <!-- ./header-connect -->
 
       <section class="header-controls">
-        <form>
-
-          <i class="fa-solid fa-magnifying-glass"></i>
-
-          <input
-            type="text"
-            name="search"
-            placeholder="Search"
-            required
-          >
-          <br>
-        </form>
-
         <ul>
+          <li>
+            <form>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                name="search"
+                placeholder="Search"
+                required
+              >
+              <br>
+            </form>
+          </li>
+
           <li class="user-controls">
             <a
               href="/"
@@ -135,24 +135,37 @@
         </ul>
       </section>
       <!-- ./header-controls -->
+
+      <section class="header-top-inner container">
+        <div class="banner-main">
+          <div class="banner-headings">
+            <a
+              href="/"
+              title="Monochrome"
+              class="header-banner"
+            >
+
+              <img
+                src="./images/component (17).png"
+                --
+              >
+              <!-- alt="MONOCHROME - Banner"> -->
+
+
+
+
+            </a>
+          </div>
+        </div>
+        <!-- in thread affair am clasa "banner-copy" pe paragraf-->
+        </div>
+        <!-- ./banner-main -->
+      </section>
+      <!-- ./header-top-inner -->
     </section>
     <!--  ./header-top -->
 
     <header class="content-header">
-      <div class="banner-main">
-
-        <a
-          href="/"
-          title="Monochrome"
-          class="header-banner"
-        >
-          <img
-            src="./images/component (17).png"
-            alt="MONOCHROME - Banner"
-          >
-        </a>
-      </div>
-      <!-- ./banner-main -->
     </header>
     <!-- ./content-header -->
 
@@ -208,16 +221,8 @@
   </header>
   <!-- ./header -->
 
-  <!-- greseala -->
-  <main class="content container">
-
-
-
-
-
-
-
-    <sec class="content-main">
+  <main class="content">
+    <section class="content-main container">
       <!-- am scris section.content-main -->
       <section class="home-catalog-preview">
         <header>
@@ -291,7 +296,7 @@
                     <span>MONOCHROME</span>
                   </a>
                 </h1>
-
+                <!-- nu am h2 ca in thread affair-->
               </div>
             </header>
             <!-- ./product-tile-header -->
@@ -397,6 +402,8 @@
         <header>
           <h2>Most loved</h2>
         </header>
+
+        <!-- nu am span ca la thread affair -->
 
         <section class="product-tiles">
           <article class="product tile">
@@ -570,8 +577,6 @@
       <!--aici inchid al doilea .home-catalog-preview-->
 
       <section class="home-content">
-        <h2>Watches for entrepreneurs</h2>
-
         <a
           href="/"
           title="Monochrome Desk"
@@ -581,6 +586,8 @@
             alt="Monochrome Desk"
           >
         </a>
+
+        <h2><span>Watches for entrepreneurs</span></h2>
 
         <p>
           But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
@@ -614,8 +621,6 @@
                     alt="MONOCHROME"
                   >
                 </a>
-
-
 
               </div>
               <!-- ./product-tile-image -->
@@ -783,7 +788,6 @@
         </section class="product-tiles">
       </section>
       <!-- ./product-tile -->
-      </section>
       <!-- inchid al treilea .home-catalog-preview-->
 
       <section class=home-catalog-preview>
@@ -795,6 +799,7 @@
           <article class="product tile">
             <header class="product-tile-header">
               <div class="product-tile-image">
+
                 <a
                   href=""
                   title="MONOCHROME"
@@ -803,9 +808,11 @@
                     src="./images/component (4).png"
                     alt="MONOCHROME"
                   >
+
                 </a>
 
-                <a href="">Wishlist</a>
+
+                <!-- <a href="">Wishlist</a> -->
 
               </div>
               <!-- ./product-tile-image -->
@@ -838,6 +845,7 @@
           <article class="product tile">
             <header class="product-tile-header">
               <div class="product-tile-image">
+
                 <a
                   href=""
                   title="MONOCHROME"
@@ -847,6 +855,8 @@
                     alt="MONOCHROME"
                   >
                 </a>
+
+
 
               </div>
               <!-- ./product-tile-image -->
@@ -970,23 +980,23 @@
           </footer>
           <!-- ./product-tile-controls -->
         </section>
-        <!-- inchid al patrulea .home-catalog-preview -->
+      </section>
+      <!-- inchid al patrulea .home-catalog-preview -->
 
-        <section class="home-social">
-        </section>
+      <!--
+      <section class="home-social">
+      </section>
 
         <section class="home-cta">
-        </section>
-        <!-- ./home-cta -->
-
       </section>
+      ./home-cta -->
       <!-- ./content-main -->
-
+    </section>
   </main>
   <!-- ./content -->
 
-  <footer class="footer container">
-    <section class="footer-top">
+  <footer class="footer">
+    <section class="footer-inner container">
       <nav class="footer-nav">
         <section class="footer-contact">
           <ul>
@@ -1137,7 +1147,7 @@
     </nav>
     <!-- ./footer-nav -->
     </section>
-    <!-- ./footer-top -->
+    <!-- ./footer-inner -->
   </footer>
   <!-- ./footer -->
 </body>
