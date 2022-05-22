@@ -245,8 +245,11 @@ table {
 body {
   font-family: 'Playfair', serif;
   color: #2B2B2B;
-  font-size: 16px;
+  /* font-size: 22px;
+  font-weight: 100;
+  text-align: left; */
 }
+/* bate in Watches for entrepreneurs */
 /* declaratia de body din fonts am mutat-o sub codul de reset*/
 /* am adaugat color */
 
@@ -256,36 +259,27 @@ a {
 }
 
 .container {
-  /* margin: 0 auto; */
+  margin: 0 auto;
   width: 100%;
-  max-width: 1272px;
+  max-width: 1920px;
 }
-/*  max-width 1272 se imparte la 12 (pt ca masuram cu 12 coloane */
 
 /* header */
-
-
 .header-top-inner {
   position: relative;
-  background: url('./../images/component\ \(17\).png');
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  background: url('./../images/component\ \(17\).png') 0% 0% no-repeat padding-box;
   color: #fff;
-  height: inherit;
+  height: 500px;
+  width: 1920px;
+    left: 0px;
   padding-left: 8px;
-}
-
-
-.header {
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 .header-connect {
   float: left;
+  padding-left: 400px;
   }
+  /* youtube facebook insta */
 
 .header-connect li {
   display: inline-block;
@@ -306,14 +300,16 @@ a {
 
 .header-controls {
   float: right;
-}
+  padding-right: 400px;
+  color: #2B2B2B;
+  }
+/* iconite cont favorite shop */
 
 .header-controls ul {
-
   display: flex;
   align-items: center;
-  gap: 8px;
-  /* margin: 20px; */
+  gap: 15px;
+  margin: 10px;
 }
 
 .header-controls .user-controls a {
@@ -335,7 +331,7 @@ a {
   min-width: 21px;
   height: 21px;
   background-color: #2B2B2B;
-  color: #fff;
+  color: fff;
   font-weight: 100;
   font-size: 14px;
   border-radius: 10px;
@@ -350,85 +346,46 @@ a {
 /* min-width: 21px; inseamna sa nu fie mai mic de 21px */
 /* qty=quantity */
 
-.header-logo {
-  text-align: center;
-  clear: both;
+.header-bottom {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  background: #2B2B2B 0% 0% no-repeat padding-box;
 }
 
-.header-bottom {
+.nav-primary {
   text-align: center;
-  color: #E8E8E8;
-  background-color: #292929;
-  text-size-adjust: 19px;
-  justify-content: flex-start;
-  text-transform: uppercase;
-  top: 488px;
-  left: 282px;
-  width: 136px;
-  height: 26px;
+  opacity: 1;
+  text-align: center;
   font: normal normal normal 19px/22px Playfair Display;
   letter-spacing: 0.28px;
   color: #E8E8E8;
-  text-transform: uppercase;
-  opacity: 1;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  */
 }
-/* .nav-primary (text-align: center} */
-
-.nav-primary {
-  /* margin: 0 auto; */
-  /* width: 100%; */
-  /* max-width: 1272px; */
-margin-bottom: 16px;
-top: 473px;
-left: 0px;
-width: 1920px;
-height: 52px;
-background: #2B2B2B 0% 0% no-repeat padding-box;
-opacity: 1;
-}
+/*textul NEW ARRIVALS BRANDS MEN"S WOMEN"S...: */
 
 .nav-primary li {
   display: inline-block;
-  margin: 0 auto;
-text-align: center;
-}
+  /* margin: 0 auto; */
+ }
 
 .nav-primary li a {
-  margin: 0 auto;
-  text-align: center;
-  display: inherit;
   padding: 8px 18px;
-  text-transform: uppercase;
-  /* margin: 0 4px; */
+  margin: 0 4px;
   font-size: 20px;
   font-weight: 300;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-/* toata ancora sa poata fi apasata, nu doar li (adica textul din dreptunghi) */
 
 .nav-primary li a:hover {
   background-color: #2B2B2B;
   color: #fff;
 }
-
-/* nav secondary nu am in monochrome
-.nav-secondary li {
-  display: inline-block;
-  margin: 0 4px;
-}
-
-.nav-secondary li a {
-  font-size: 14px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 4px 8px;
-  transition: color 0.2s linear;
-}
-
-.nav-secondary li a:hover {
-  color: #2B2B2B;
-}*/
 /* end-header*/
 
 /* footer */
@@ -436,28 +393,32 @@ text-align: center;
   background: #E8E8E8 0% 0% no-repeat padding-box;
   padding: 50px;
   color: #2B2B2B;
-  font-size: 14px;
-  font-weight: 100;
+  text-align: left;
+  font: normal normal normal 22px/39px Playfair Display;
+  letter-spacing: 0.79px;
+  text-transform: lowercase;
+  opacity: 1;
   display: flex;
   justify-content: space-between;
-  /* margin: 0 auto; */
+  align-items: flex-start;
+
+  /*
+  margin: 0 auto;
   top: 3827px;
   left: 0px;
   width: 1920px;
   height: 249px;
+ */
 }
-/* ./../ pentru a ajunge la img */
 
-.footer-nav {
-  margin-bottom: 50px;
-}
+/*
 
 .footer-nav ul {
   display: inline-block;
   margin-right: 32px;
   vertical-align: top;
 }
-/* am facut layout */
+
 
 .footer-nav ul li {
   margin-bottom: 6px;
@@ -492,8 +453,7 @@ text-align: center;
 
 .footer-contact h1 {
   font-size: 16px;
-  /* text-transform: uppercase; */
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .footer-contact h1 span {
@@ -518,90 +478,43 @@ text-align: center;
 .foooter-bottom p {
   margin-bottom: 8px;
 }
+*/
 /* end-footer */
 
 /* homepage */
-
-/* .content-header {
-  background: #E8E8E8  url('../images/component\ \(17\).png') center center / cover no-repeat;
-  height: 572px;
-  margin-bottom: 96px;
-}
-
-.banner-headings {
-  text-align: center;
-}
-
-.banner-headings h1 {
-  font-weight: bold;
-  font-size: 75px;
-  }
-
-.banner-headings h2 {
-  font-weight: 300;
-  font-size: 42px;
-  margin: 0 auto;
-  margin: 16px 0 43px 0;
-}
-
-.banner-headings .banner-cta {
-  margin: 0 auto;
-  text-align: center;
-  display: inline-block;
-  border: 1px solid #ff6b6b;
-  padding: 27px 40px;
-  text-transform: uppercase;
-  font-size: 20px;
-  color: #ff6b6b;
-  border-radius: 36px;
-  transition: color 0.2s linear, background-color 0.2s linear;
-}
-
-.banner-headings .banner-cta:hover {
-  color: #fff;
-  background-color: #ff6b6b;
-  }
-
-.banner-copy {
-  position: absolute;
-  left: 25px;
-  bottom: 40px;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
-}
-*/
-
 .content-main > section {
-  margin-bottom: 96px;
-
-}
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  margin-bottom: 16px;
+  text-align: center;
+  }
 
 .content-main > section > header {
-  text-align: center;
+  font-size: 35px;
+  color: #2B2B2B;
 }
-.content-main > section > header > h1 {
-  font-size: 30px;
-  color: #292929;
-  font-weight: 300;
-  margin-bottom: 16px;
-}
+/* New stuff, Most loved, MEN'S, Women's */
 
-.content-main > section > header > h1 span {
-  font-weight: 500;
-}
+/* New stuff
+.content-main > section > header > h1 {
+  margin-bottom: 16px;
+} */
 
 .home-catalog-preview > header {
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .product-tiles {
   display: flex;
   justify-content: space-between;
+  gap: 35px;
 }
 
 .product-tile {
-width: 27.34375%; /* cum am ajuns la numar 350/1280*100 */
+width: 27.34375%;
+/* cum am ajuns la numar 350/1280*100 */
 }
 
 .product-tile .product-tile-image {
@@ -611,17 +524,6 @@ position: relative;
 .product-tile .product-tile-image img {
   width: 100%;
 }
-
-/* .product-tile .product-tile-badge {
-  color: #ff6b6b;
-  font-size: 20px;
-  font-weight: 500;
-  top: 20px;
-  right: 20px;
-  position: absolute;
-} */
-
-
 
 .product-tile .product-tile-title {
   text-align: center;
@@ -652,68 +554,45 @@ position: relative;
   font-weight: 300;
 }
 
-/*.product-tile .product-tile-pricing .product-price-regular {
-  text-decoration: line-through;
-}
-
-.product-tile .product-tile-pricing .product-price {
-  font-size: 24px;
-}
-
-.product-tile .product-tile-pricing .product-price span {
-  color: #ff6b6b;
-  font-weight: 500;
-}
-
-.product-tile .product-tile-controls {
-  text-align: center;
-}
-
-.product-tile .product-tile-controls .product-tile-a2c {
-  border: 1px solid #ff6b6b;
-  text-transform: uppercase;
-  padding: 16px 32px;
-  border-radius: 32px;
-  background: none;
-  color: #ff6b6b;
-  font-family: 'Roboto' sans-serif;
-  cursor: pointer;
-  transition: color 0.2s linear, background-color 0.2s linear;
-  }
-
-  .product-tile .product-tile-controls .product-tile-a2c:hover {
-    color: #fff;
-    background-color: #ff6b6b;
-  }
-  */
-
-
 .home-content {
+
+
+background: transparent url('./../images/component\ \(16\).png') 0% 0% no-repeat padding-box;
   font-family: 'Roboto', light;
+  top: 1661px;
+  left: 282px;
+  width: 666px;
+  height: 666px;
+  padding-left: 800px;
+}
+/* aici e poza cu Monochrome desk si paragrafele Watches for entrepreuneurs */
+
+.home-content > h2 > span {
+  top: 1665px;
+  left: 1082px;
+  width: 556px;
+  height: 59px;
+  text-align: right;
+  font: normal normal bold 44px/33px Playfair Display;
+  letter-spacing: 0.66px;
   color: #2B2B2B;
-  font-size: 16px;
-  text-align: left;
-  letter-spacing: 0.33px;
-  /* display: inline-flex; */
-  display: inline-block;
-  justify-content: flex-start;
+  opacity: 1;
+  margin: -1000px;
+}
+
+.home-content .p {
   top: 1764px;
   left: 1087px;
   width: 551px;
   height: 242px;
-}
-
-.home-content h2 {
-      font-family: 'Playfair', bold;
-    text-align: center;
-    display: inline-block;
-    justify-content: space-between;
-    letter-spacing: 0.66px;
-    opacity: 1;
-    top: 1665px;
-    left: 1082px;
-    width: 556px;
-    height: 59px;
+  text-align: left;
+  font: normal normal 300 22px/43px Roboto;
+  letter-spacing: 0.33px;
+  color: #2B2B2B;
+  opacity: 1;
+  /*  display: flex;
+  justify-content: flex-end;
+  align-items: center; */
 }
 
 .home-cta a {
@@ -722,8 +601,6 @@ position: relative;
   justify-content: center;
   align-items: flex-end;
   height: 236px;
-  background: #0066B2 url('../images/component\ \(17\).png') center center / cover no-repeat;
-  color: #fff;
   font-size: 26px;
   font-weight: 700;
   text-transform: uppercase;
@@ -777,5 +654,4 @@ position: relative;
   display: inline-block;
   margin: 5px;
 }
-
 /* end homepage */
