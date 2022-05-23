@@ -265,14 +265,17 @@ a {
 }
 
 /* header */
-.header-top-inner {
-  position: relative;
-  background: url('./../images/component\ \(17\).png') 0% 0% no-repeat padding-box;
+.header-top {
+  background: url('./../images/component\ \(17\).png') center center no-repeat padding-box;
   color: #fff;
+  position: relative;
   height: 500px;
   width: 1920px;
-    left: 0px;
-  padding-left: 8px;
+  left: 0px;
+  padding-left: 8px;}
+
+.header-top-inner {
+padding-top: 16px;
 }
 
 .header-connect {
@@ -284,19 +287,22 @@ a {
 .header-connect li {
   display: inline-block;
   margin: 10px;
+
 }
 
-.header-connect li:first-child i[class*='fa-'] {
-  color: #fff;
+/* .header-connect li:first-child i[class*='fa-'] {
+color: #fff;
   font-size: 24px;
 }
-/* fa- inseamna orice iconita font awesome */
 
 .header-connect li:nth-child(2) {
   border-left: 1px solid #707070;
   padding-left: 16px;
-  /* margin-left: 16px; */
-}
+ margin-left: 16px;
+} */
+/* fist child=youtube */
+/* fa- inseamna orice iconita font awesome */
+
 
 .header-controls {
   float: right;
@@ -327,10 +333,28 @@ a {
   display: inline-block;
 }
 
+.header-controls .user-controls .qty {
+  min-width: 21px;
+  height: 21px;
+  /* background-color: #2B2B2B; */
+  color: fff;
+  font-weight: 100;
+  font-size: 14px;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+/* bate in cate prod sunt in cart =3 aici */
+
 .header-controls .cart-controls .qty {
   min-width: 21px;
   height: 21px;
-  background-color: #2B2B2B;
+  /* background-color: #2B2B2B; */
   color: fff;
   font-weight: 100;
   font-size: 14px;
@@ -349,28 +373,28 @@ a {
 .header-bottom {
   margin: 0 auto;
   width: 100%;
-  max-width: 1920px;
   background: #2B2B2B 0% 0% no-repeat padding-box;
-}
+  }
+/* aici nu ai max-width, de fapt ai doar fundalul, se intinde 100%
+si vei putea folosi clasa container pe unul din elementele interioare */
 
 .nav-primary {
-  text-align: center;
+  /* text-align: center; */
   opacity: 1;
-  text-align: center;
   font: normal normal normal 19px/22px Playfair Display;
   letter-spacing: 0.28px;
   color: #E8E8E8;
-  /* display: flex;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  */
 }
 /*textul NEW ARRIVALS BRANDS MEN"S WOMEN"S...: */
+/* daca las display si scot text-align nu mai stau centrate */
 
 .nav-primary li {
   display: inline-block;
   /* margin: 0 auto; */
- }
+}
 
 .nav-primary li a {
   padding: 8px 18px;
@@ -400,15 +424,13 @@ a {
   opacity: 1;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  /* align-items: flex-end; */
 
-  /*
-  margin: 0 auto;
+/*  margin: 0 auto;
   top: 3827px;
   left: 0px;
-  width: 1920px;
-  height: 249px;
- */
+  width: 1920x;
+  height: 249px; */
 }
 
 /*
@@ -499,7 +521,11 @@ a {
 /* New stuff
 .content-main > section > header > h1 {
   margin-bottom: 16px;
-} */
+}
+
+.content-main > section > header > h1 span {
+  font-weight: 500;
+}*/
 
 .home-catalog-preview > header {
   margin-top: 25px;
@@ -517,12 +543,31 @@ width: 27.34375%;
 /* cum am ajuns la numar 350/1280*100 */
 }
 
-.product-tile .product-tile-image {
+.product-tile ~ .product-tile-header ~ .product-tile-image {
 position: relative;
 }
 
-.product-tile .product-tile-image img {
+.product-tile ~ .product-tile-header ~ .product-tile-image ~ img {
   width: 100%;
+}
+
+/* .product-tile ~ .product-tile-header ~ .product-tile-image ~ .product-tile-badge i[class*='fa-'] {
+  color: purple;
+  font-size: 20px;
+  font-weight: 500;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+} */
+
+/* iconita cu inimioara */
+
+.product-tile .product-tile-badge i[class*='fa-'] {
+  font-size: 20px;
+  font-weight: 500;
+  top: 20px;
+  right: 200px;
+  /* position: absolute; */
 }
 
 .product-tile .product-tile-title {
@@ -554,10 +599,43 @@ position: relative;
   font-weight: 300;
 }
 
+
+
+
+
+
+.product-tile .product-tile-controls {
+  text-align: center;
+}
+
+.product-tile .product-tile-controls .product-tile-a2c {
+  border: 1px solid #ff6b6b;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 32px;
+  background: none;
+  color: #ff6b6b;
+  font-family: 'Roboto' sans-serif;
+  cursor: pointer;
+  transition: color 0.2s linear, background-color 0.2s linear;
+  }
+
+  .product-tile .product-tile-controls .product-tile-a2c:hover {
+    color: #fff;
+    background-color: #ff6b6b;
+  }
+
+
+/* view all ar trebui.. */
+
+
+
+
+
+
+
 .home-content {
-
-
-background: transparent url('./../images/component\ \(16\).png') 0% 0% no-repeat padding-box;
+  background: transparent url('./../images/component\ \(16\).png') 0% 0% no-repeat padding-box;
   font-family: 'Roboto', light;
   top: 1661px;
   left: 282px;
