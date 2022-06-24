@@ -481,7 +481,8 @@ a {
 
 /* edit 9.05 */
 .content-header {
-  background: #1b1927 url('./../images/banners/banner-01.jpg') center center / cover no-repeat;
+  background: #1b1927 url('./../images/banners/banner-01.jpg') center center /
+    cover no-repeat;
   height: 572px;
   margin-bottom: 96px;
 }
@@ -504,7 +505,7 @@ a {
 .banner-headings h1 {
   font-weight: bold;
   font-size: 75px;
-  }
+}
 
 .banner-headings h2 {
   font-weight: 300;
@@ -526,7 +527,7 @@ a {
 .banner-headings .banner-cta:hover {
   color: #fff;
   background-color: #ff6b6b;
-  }
+}
 
 .banner-copy {
   position: absolute;
@@ -539,7 +540,7 @@ a {
 /* display: none; = nu se mai vede */
 
 .content-main > section {
-  margin-bottom: 96px;;
+  margin-bottom: 96px;
 }
 /* end edit 9.05 */
 
@@ -568,11 +569,11 @@ a {
 }
 
 .product-tile {
-width: 27.34375%; /* cum am ajuns la numar 350/1280*100 */
+  width: 27.34375%; /* cum am ajuns la numar 350/1280*100 */
 }
 
 .product-tile .product-tile-image {
-position: relative;
+  position: relative;
 }
 
 .product-tile .product-tile-image img {
@@ -638,18 +639,17 @@ position: relative;
   border: 1px solid #ff6b6b;
   text-transform: uppercase;
   padding: 16px 32px;
-  border-radius: 32px;
   background: none;
   color: #ff6b6b;
   font-family: 'Roboto' sans-serif;
   cursor: pointer;
   transition: color 0.2s linear, background-color 0.2s linear;
-  }
+}
 
-  .product-tile .product-tile-controls .product-tile-a2c:hover {
-    color: #fff;
-    background-color: #ff6b6b;
-  }
+.product-tile .product-tile-controls .product-tile-a2c:hover {
+  color: #fff;
+  background-color: #ff6b6b;
+}
 
 .home-cta a {
   display: flex;
@@ -657,7 +657,8 @@ position: relative;
   justify-content: center;
   align-items: flex-end;
   height: 236px;
-  background: #0066B2 url('./../images/banners/banner-04.jpg') center center / cover no-repeat;
+  background: #0066b2 url('./../images/banners/banner-04.jpg') center center /
+    cover no-repeat;
   color: #fff;
   font-size: 26px;
   font-weight: 700;
@@ -683,7 +684,7 @@ position: relative;
 .home-social ul {
   margin-top: 33px;
   text-align: center;
-  }
+}
 
 .home-social li {
   display: inline-block;
@@ -712,7 +713,6 @@ position: relative;
   display: inline-block;
   margin: 5px;
 }
-
 
 /* end edit 9.05 */
 /* end homepage */

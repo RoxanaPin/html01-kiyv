@@ -249,7 +249,7 @@ body {
   font-weight: 100;
   text-align: left; */
 }
-/* bate in Watches for entrepreneurs */
+/* Watches for entrepreneurs */
 /* declaratia de body din fonts am mutat-o sub codul de reset*/
 /* am adaugat color */
 
@@ -260,8 +260,7 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
+  max-width: 1280px;
 }
 
 /* header */
@@ -272,15 +271,14 @@ a {
   color: #fff;
   position: relative;
   height: 500px;
-  width: 1920px;
   left: 0px;
   padding-left: 8px;
 }
 
 .header-top-inner {
-  padding-top: 16px;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-top: 0.5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .header-connect {
@@ -439,10 +437,9 @@ nav-primary a {
 .footer-inner {
   color: #2b2b2b;
   text-align: left;
-  font: normal normal normal 22px/39px Playfair Display;
+  font: normal normal normal 24px/39px Playfair Display;
   letter-spacing: 0.79px;
   text-transform: lowercase;
-  width: 1290px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -502,13 +499,14 @@ nav-primary a {
   margin: 0 auto;
   width: 100%;
   max-width: 1280px;
-  margin-bottom: 16px;
+  margin-bottom: 5%;
   text-align: center;
 }
 
 .content-main > section > header {
   font-size: 35px;
   color: #2b2b2b;
+  padding-top: 5%;
 }
 /* New stuff, Most loved, MEN'S, Women's */
 
@@ -550,17 +548,12 @@ nav-primary a {
 }
 
 .product-tile-header .product-tile-badge i[class*='fa-'] {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
   font-size: 20px;
   font-weight: 500;
   top: 20px;
   right: 20px;
-  /* position: absolute; */
-  /* cu absolute fuge in coltul din dreapta sus a ecranului */
-  /* cu display flex am reusit sa o mut in dreapta dar nu o pot pune pe imagine */
+  position: absolute;
+  animation: load 2s ease infinite;
 }
 /* iconita cu inimioara */
 
@@ -603,7 +596,6 @@ nav-primary a {
   justify-content: center;
   text-align: center;
   /* cele de mai sus nu au efect */
-
   border-radius: 32px;
   font: normal normal normal 22px/22px Roboto;
   letter-spacing: 0.88px;
@@ -614,53 +606,50 @@ nav-primary a {
   cursor: pointer;
   transition: color 0.2s linear, background-color 0.2s linear;
 }
+/* view all  */
 
 .product-tile-a2c:hover {
   color: #fff;
-  background-color: grey;
+  background-color: #c7c6c1;
   border-radius: 32px;
 }
-/* view all  */
+/* view all hover*/
 
 .home-content {
-  background: transparent url('./../images/component\ \(16\).png') 0% 0%
-    no-repeat padding-box;
-  font-family: 'Roboto', light;
-  top: 1661px;
-  left: 282px;
-  width: 666px;
-  height: 666px;
-  padding-left: 800px;
-}
-/* aici e poza cu Monochrome desk si paragrafele Watches for entrepreuneurs */
-
-.home-content > h2 > span {
-  top: 1665px;
-  left: 1082px;
-  width: 556px;
-  height: 59px;
-  text-align: right;
-  font: normal normal bold 44px/33px Playfair Display;
-  letter-spacing: 0.66px;
-  color: #2b2b2b;
-  opacity: 1;
-  margin: -1000px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.home-content .p {
-  top: 1764px;
-  left: 1087px;
-  width: 551px;
-  height: 242px;
+.home-content .aside {
+  /*background: transparent url('./../images/component\ \(16\).png') 0% 0%
+    no-repeat padding-box;*/
+  margin-right: 5%;
+}
+/* aici e poza cu Monochrome desk*/
+
+.home-content .section {
   text-align: left;
   font: normal normal 300 22px/43px Roboto;
   letter-spacing: 0.33px;
   color: #2b2b2b;
   opacity: 1;
-  /*  display: flex;
-  justify-content: flex-end;
-  align-items: center; */
 }
+/* cele doua paragrafe ale articolului+titlu articol*/
+
+.home-content .section > h2 > span {
+  text-align: left;
+  font: normal normal bold 44px/33px Playfair Display;
+  letter-spacing: 0.66px;
+  color: #2b2b2b;
+  opacity: 1;
+}
+/* titlul articolului */
+
+.home-content .section p {
+  margin-top: 8%;
+}
+/* cele doua paragrafe ale articolului*/
 
 .home-cta a {
   display: flex;
