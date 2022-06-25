@@ -506,30 +506,21 @@ nav-primary a {
 .content-main > section > header {
   font-size: 35px;
   color: #2b2b2b;
-  padding-top: 5%;
+  padding-top: 24px;
 }
 /* New stuff, Most loved, MEN'S, Women's */
 
-/* New stuff
-.content-main > section > header > h1 {
-  margin-bottom: 16px;
-}
-
-.content-main > section > header > h1 span {
-  font-weight: 500;
-}*/
-
 .home-catalog-preview > header {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-top: 2.5px solid #cec0c0;
 }
 
 .product-tiles {
   display: flex;
   justify-content: space-between;
   gap: 35px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 60px;
 }
 /* cele 16 poze+titlu si pret */
 
@@ -538,22 +529,76 @@ nav-primary a {
   /* cum am ajuns la numar 350/1280*100 */
 }
 
-.product-tile-header ~ .product-tile-image {
-  /* width: 27.34375%; */
+.product-tile .product-tile-image {
   position: relative;
+  margin-bottom: 24px;
 }
 
-.product-tile-header ~ .product-tile-image ~ img {
+.product-tile .product-tile-image img {
   width: 100%;
 }
 
-.product-tile-header .product-tile-badge i[class*='fa-'] {
-  font-size: 20px;
-  font-weight: 500;
+.product-tile .product-tile-badge {
+  position: absolute;
   top: 20px;
   right: 20px;
-  position: absolute;
-  animation: load 2s ease infinite;
+}
+
+@keyframes heart {
+  0% {
+    color: #d21404;
+    transform: scale(0.9);
+  }
+
+  10% {
+    color: #bc544b;
+    transform: scale(1.3);
+  }
+
+  20% {
+    color: #d21404;
+    transform: scale(0.9);
+  }
+
+  30% {
+    color: #9b1003;
+    transform: scale(1.3);
+  }
+
+  40% {
+    color: #9b1003;
+    transform: scale(0.9);
+  }
+
+  50% {
+    color: #d21404;
+    transform: scale(1.3);
+  }
+
+  60% {
+    color: #d21404;
+    transform: scale(0.9);
+  }
+
+  70% {
+    color: #d21404;
+    transform: scale(1.3);
+  }
+
+  80% {
+    color: #bc544b;
+    transform: scale(0.9);
+  }
+
+  100% {
+    color: #c9746d;
+    transform: scale(1.3);
+  }
+}
+
+.product-tile-header .product-tile-badge i[class*='fa-'] {
+  font-size: 36px;
+  animation: heart 5s ease-in-out infinite;
 }
 /* iconita cu inimioara */
 
@@ -565,11 +610,11 @@ nav-primary a {
 
 .product-tile .product-tile-title span:first-child {
   color: #000;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .product-tile .product-tile-title span:nth-child(2) {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .product-tile .product-tile-subtitle {
@@ -584,6 +629,7 @@ nav-primary a {
   margin: 16px 0;
   font-size: 18px;
   font-weight: 300;
+  letter-spacing: 0.79px;
 }
 
 .product-tile .product-tile-controls {
@@ -592,11 +638,6 @@ nav-primary a {
 
 .product-tile-a2c {
   margin: 0 auto; /*centrare in pag */
-  display: flexbox;
-  justify-content: center;
-  text-align: center;
-  /* cele de mai sus nu au efect */
-  border-radius: 32px;
   font: normal normal normal 22px/22px Roboto;
   letter-spacing: 0.88px;
   color: #2b2b2b;
@@ -611,7 +652,6 @@ nav-primary a {
 .product-tile-a2c:hover {
   color: #fff;
   background-color: #c7c6c1;
-  border-radius: 32px;
 }
 /* view all hover*/
 
@@ -650,33 +690,6 @@ nav-primary a {
   margin-top: 8%;
 }
 /* cele doua paragrafe ale articolului*/
-
-.home-cta a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  height: 236px;
-  font-size: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-right: 50px;
-  text-align: right;
-}
-
-.home-cta a span:nth-of-type(1) {
-  margin-bottom: 16px;
-}
-
-.home-cta a > span:nth-child(even) {
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.home-cta a > span:nth-child(even) span {
-  font-size: 18px;
-  font-weight: 500;
-}
 
 .home-social ul {
   margin-top: 33px;
